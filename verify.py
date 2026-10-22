@@ -2,22 +2,21 @@ from playwright.sync_api import sync_playwright
 import os
 
 def run_cuj(page):
-    # This is a static file, so we can use file://
     file_path = os.path.abspath("index.html")
     page.goto(f"file://{file_path}")
-    page.wait_for_timeout(500)
 
-    # Hover over the card to see the effect
-    page.locator(".container").hover()
-    page.wait_for_timeout(500)
+    # Wait for the fade-in animation and some typing effect to happen
+    page.wait_for_timeout(3000)
 
-    # Hover over a social button to see the effect
+    # Hover over a social button to see the glow/slide effect
     page.locator(".btn-yt").first.hover()
-    page.wait_for_timeout(500)
-
-    # Take screenshot at the key moment
-    page.screenshot(path="/home/jules/verification/screenshots/verification.png")
     page.wait_for_timeout(1000)
+
+    # Take screenshot at the key moment showing the hover state and glassmorphism
+    page.screenshot(path="/home/jules/verification/screenshots/verification2.png")
+
+    # Wait longer to capture more of the typing and floating animation for the video
+    page.wait_for_timeout(4000)
 
 if __name__ == "__main__":
     with sync_playwright() as p:

@@ -4,124 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>itsAmirAliDev | Future YouTuber & Coder</title>
-  <style>
-    :root {
-      --bg-color: #0d1117;
-      --card-bg: #161b22;
-      --text-main: #c9d1d9;
-      --text-muted: #8b949e;
-      --accent: #58a6ff;
-      --yt-color: #d21414;
-      --gh-color: #21262d;
-      --li-color: #0a66c2;
-    }
 
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
-      box-sizing: border-box;
-    }
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    .container {
-      background-color: var(--card-bg);
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      padding: 40px;
-      max-width: 450px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-      box-sizing: border-box;
-    }
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    .container:hover {
-      transform: translateY(-5px);
-    }
-
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid var(--accent);
-      margin-bottom: 20px;
-      object-fit: cover;
-      box-shadow: 0 0 15px rgba(88, 166, 255, 0.4);
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      margin: 0 0 10px 0;
-      color: #ffffff;
-    }
-
-    .subtitle {
-      font-size: 1.1rem;
-      color: var(--accent);
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-
-    .description {
-      font-size: 1rem;
-      color: var(--text-muted);
-      margin-bottom: 30px;
-      line-height: 1.5;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .social-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 20px;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: all 0.2s ease;
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .social-btn:hover {
-      filter: brightness(1.2);
-      transform: scale(1.02);
-    }
-
-    .btn-yt { background-color: var(--yt-color); }
-    .btn-gh { background-color: var(--gh-color); }
-    .btn-li { background-color: var(--li-color); }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    <img src="https://avatars.githubusercontent.com/itsAmirAliDev" alt="Amir's Profile Picture" class="avatar">
-    <h1>Hello! I'm Amir 🚀</h1>
-    <div class="subtitle">Future YouTuber & Programmer</div>
-    <div class="description">Updating soon with cool content! 😎🔥</div>
+  <!-- Background Animated Elements -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="container fade-in">
+    <div class="hero">
+      <div class="avatar-wrapper">
+        <img src="https://avatars.githubusercontent.com/itsAmirAliDev" alt="Amir's Profile Picture" class="avatar float-animation">
+      </div>
+      <h1>Hello! I'm <span class="highlight">Amir</span> 🚀</h1>
+      <div class="subtitle-container">
+        <div id="typewriter" class="subtitle"></div><span class="cursor">|</span>
+      </div>
+      <p class="description">Updating soon with cool content! 😎🔥</p>
+    </div>
 
     <div class="links">
-      <a href="https://www.youtube.com/channel/UCb0QAczEG361YCVuYV1kiXQ" class="social-btn btn-yt" target="_blank" rel="noopener noreferrer">Subscribe to Main Channel</a>
-      <a href="https://www.youtube.com/channel/UCHMRB3a1ynV7tclRnkeH8TA" class="social-btn btn-yt" target="_blank" rel="noopener noreferrer">Subscribe to Gaming Channel</a>
-      <a href="https://github.com/itsAmirAliDev" class="social-btn btn-gh" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-      <a href="https://www.linkedin.com/in/amir-ali-tavakoli-fard" class="social-btn btn-li" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+      <a href="https://www.youtube.com/channel/UCb0QAczEG361YCVuYV1kiXQ" class="social-btn btn-yt" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-youtube icon"></i> Main Channel
+      </a>
+      <a href="https://www.youtube.com/channel/UCHMRB3a1ynV7tclRnkeH8TA" class="social-btn btn-yt" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-youtube icon"></i> Gaming Channel
+      </a>
+      <a href="https://github.com/itsAmirAliDev" class="social-btn btn-gh" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github icon"></i> GitHub Profile
+      </a>
+      <a href="https://www.linkedin.com/in/amir-ali-tavakoli-fard" class="social-btn btn-li" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin icon"></i> LinkedIn Profile
+      </a>
     </div>
   </div>
   
+  <script src="main.js"></script>
 </body>
 </html>
