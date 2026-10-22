@@ -4,42 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>itsAmirAliDev | Future YouTuber & Coder</title>
-  <style>
-    body {
-      background-color: #0d1117; /* dark backgound*/
-      color: #58a6ff; /* blue*/
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-    }
-    h1 { font-size: 3rem; margin-bottom: 10px; color: #ffffff; }
-    p { font-size: 1.2rem; color: #8b949e; }
-    .social-btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #238636;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-  </style>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hello! I'm Amir 🚀</h1>
-  <p>Future YouTuber & Programmer in the making...</p>
-  <p>Updating soon with cool content! 😎🔥</p>
+  <!-- Background Animated Elements -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="container fade-in">
+    <div class="hero">
+      <div class="avatar-wrapper">
+        <img src="https://avatars.githubusercontent.com/itsAmirAliDev" alt="Amir's Profile Picture" class="avatar float-animation">
+      </div>
+      <h1>Hello! I'm <span class="highlight">Amir</span> 🚀</h1>
+      <div class="subtitle-container">
+        <div id="typewriter" class="subtitle"></div><span class="cursor">|</span>
+      </div>
+      <p class="description">Updating soon with cool content! 😎🔥</p>
+    </div>
+
+    <div class="links">
+      <a href="https://www.youtube.com/channel/UCb0QAczEG361YCVuYV1kiXQ" class="social-btn btn-yt" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-youtube icon"></i> Main Channel
+      </a>
+      <a href="https://www.youtube.com/channel/UCHMRB3a1ynV7tclRnkeH8TA" class="social-btn btn-yt" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-youtube icon"></i> Gaming Channel
+      </a>
+      <a href="https://github.com/itsAmirAliDev" class="social-btn btn-gh" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github icon"></i> GitHub Profile
+      </a>
+      <a href="https://www.linkedin.com/in/amir-ali-tavakoli-fard" class="social-btn btn-li" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin icon"></i> LinkedIn Profile
+      </a>
+    </div>
+  </div>
   
-  <a href="https://www.youtube.com/channel/UCb0QAczEG361YCVuYV1kiXQ" class="social-btn">Subscribe to my Main YouTube Channel</a>
-  <a href="https://www.youtube.com/channel/UCHMRB3a1ynV7tclRnkeH8TA" class="social-btn">Subscribe to my Gaming YouTube Channel</a>
-  <a href="https://github.com/itsAmirAliDev" class="social-btn">Github Profile</a>
-  <a href="https://www.linkedin.com/in/amir-ali-tavakoli-fard" class="social-btn">Linkedin</a>
-  
+  <script src="main.js"></script>
 </body>
 </html>
